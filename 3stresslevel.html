@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress Levels - Project Z</title>
+    <link rel="stylesheet" href="3stresslevel.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<!-- title font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="image-Zombie"></div>
+
+    <!-- header -->
+    <header class="header">
+      <h1 class="logo">Project Z : Zero stress</h1>
+      <nav>
+        <a href="desktop.html">HOME</a>
+        <a href="1trigger.html">TRIGGER</a>
+        <a href="5copingtechniques.html">COPING MECHANISM</a>
+        <a href="2weeklystress.html">WEEKLY STRESS</a>
+      </nav>
+      <div class="button-wrapper">
+        <a href="Documents/Website content.pdf" class="btn-signing-hover" title="download a detailed pdf">DOWNLOAD</a>
+      </div>
+    </header>
+    
+    <div class="container">
+      <!-- main class -->
+      <main>
+        
+        <!-- full content -->
+        <div class = "content1">
+          <h1>Reactions, When Stress Takes Over</h1>
+
+          <div class="description1">
+            <blockquote>
+              "Sometimes, it's a full storm. Sometimes, it's just a cloud
+              passing by. I've started learning how to name the weather inside
+              me."
+            </blockquote>
+
+            <p>I never really rated my stress before.</p>
+            <p>But while making this journal, I started to notice —</p>
+            <p>Every day doesn't feel the same.</p>
+            <p>Some days, I'm slightly off.</p>
+            <p>Some days, I'm fully down.</p>
+            <p>And some days, I'm just... floating in the middle.</p>
+            <p>So I created my own Stress Meter.</p>
+
+            <div class="divider">________________________________________</div>
+
+            <h2>🎭 My Mood-Based Stress Scale (Inspired by Anime Themes)</h2>
+
+            <div class="stress-scale">
+              <div class="scale-header">
+                <div>Level</div>
+                <div>Mood Name</div>
+                <div>Emoji</div>
+                <div>Feelings</div>
+                <div>Body + Mind Reactions</div>
+              </div>
+              <div class="scale-item">
+                <div>0</div>
+                <div>Zero Zone</div>
+                <div>😌</div>
+                <div>Peaceful, balanced</div>
+                <div>Calm, focused, steady</div>
+              </div>
+              <div class="scale-item">
+                <div>1</div>
+                <div>Grey Cloud</div>
+                <div>😐</div>
+                <div>Slight pressure, dull mood</div>
+                <div>Slow thoughts, low energy</div>
+              </div>
+              <div class="scale-item">
+                <div>2</div>
+                <div>Mind Fog</div>
+                <div>😵‍💫</div>
+                <div>Overthinking, distracted</div>
+                <div>Can't focus, fidgety</div>
+              </div>
+              <div class="scale-item">
+                <div>3</div>
+                <div>System Overload</div>
+                <div>😣</div>
+                <div>Panic, too many tasks</div>
+                <div>Tight chest, mental freeze</div>
+              </div>
+              <div class="scale-item">
+                <div>4</div>
+                <div>Dark Spiral</div>
+                <div>😔</div>
+                <div>Guilt, sadness, low energy</div>
+                <div>No motivation, silent mood</div>
+              </div>
+              <div class="scale-item">
+                <div>5</div>
+                <div>Red Alert</div>
+                <div>😡</div>
+                <div>Explosive stress, burnout</div>
+                <div>Shaking, anger, isolation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Half content -->
+
+        <div class="content">
+          <h1>Stress level</h1>
+          <p class="description">
+          </p>
+
+          <!-- Stress Level Meter Chart -->
+          <div class="chart-container transparent-chart">
+            <canvas id="stressMeterChart"></canvas>
+          </div>
+
+          <div class="stress-info">
+            <h2>🌈 Color-Based Visual Stress Levels</h2>
+            <div class="levels-grid">
+              <div class="level-card" data-level="0">
+                <div class="level-color zero-zone"></div>
+                <h3>Level 0 – Zero Zone</h3>
+                <p>Complete peace and relaxation</p>
+              </div>
+              <div class="level-card" data-level="1">
+                <div class="level-color light-stress"></div>
+                <h3>Level 1–2 – Light Stress</h3>
+                <p>Manageable tension, slight discomfort</p>
+              </div>
+              <div class="level-card" data-level="3">
+                <div class="level-color heavy-stress"></div>
+                <h3>Level 3 – Heavy Stress</h3>
+                <p>Significant tension, affecting mood</p>
+              </div>
+              <div class="level-card" data-level="4">
+                <div class="level-color critical-zone"></div>
+                <h3>Level 4–5 – Critical Zone</h3>
+                <p>Overwhelming stress, needs immediate attention</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Stress Trend Chart -->
+          <div class="chart-container transparent-chart">
+            <canvas id="weeklyTrendChart"></canvas>
+          </div>
+
+          <div class="usage-section">
+            <h2>🧠 How I Use This in My Life</h2>
+            <p>Each day, I just take a second and ask: "Which zone am I in today?"</p>
+            <ul class="usage-list">
+              <li><span class="emoji">🛡️</span> If I'm at 0 or 1 — I protect that peace.</li>
+              <li><span class="emoji">🛠️</span> If I'm at 2 or 3 — I try to use my coping tools.</li>
+              <li><span class="emoji">⏸️</span> If I reach 4 or 5 — I pause everything.</li>
+            </ul>
+            <p>That level needs attention — not hustle.</p>
+            <p class="closing-thought">This stress meter doesn't just help me track the storm. It teaches me to respect my inner weather — even when it's dark.</p>
+          </div>
+
+          <div class="tag-box">
+            <a href="desktop.html#buttons-list" class="tag">Continue Your Journey</a>
+          </div>
+        </div>
+      </main>
+      
+      <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>From chaos to clarity – Project Z Journal © 2025</p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/utsav_prajapati307" target="_blank" title="Visit my Instagram">
+            <i class="fab fa-instagram"></i>
+          <a href="https://www.linkedin.com/in/
+          utsav-prajapati-ab5b632a6
+          "><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:utsavprajapati307@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <script src="3stresslevel.js"></script>
+  </body>
+</html>
